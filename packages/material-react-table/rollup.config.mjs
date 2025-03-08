@@ -1,9 +1,12 @@
-import pkg from './package.json' assert { type: 'json' };
+import { readFileSync } from 'fs';
 import typescript from '@rollup/plugin-typescript';
 import copy from 'rollup-plugin-copy';
 import del from 'rollup-plugin-delete';
 import dts from 'rollup-plugin-dts';
 import external from 'rollup-plugin-peer-deps-external';
+
+const pkg = JSON.parse(readFileSync('./package.json', 'utf8'));
+
 
 export default [
   {
