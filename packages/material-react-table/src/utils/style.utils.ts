@@ -72,6 +72,7 @@ export const getCommonPinnedCellStyles = <TData extends MRT_RowData>({
           ),
           0.97,
         ),
+        /*
         boxShadow: column
           ? isPinned === 'left' && column.getIsLastColumn(isPinned)
             ? `-4px 0 4px -4px ${alpha(theme.palette.grey[700], 0.5)} inset`
@@ -79,6 +80,7 @@ export const getCommonPinnedCellStyles = <TData extends MRT_RowData>({
               ? `4px 0 4px -4px ${alpha(theme.palette.grey[700], 0.5)} inset`
               : undefined
           : undefined,
+          */
         ...commonCellBeforeAfterStyles,
       },
     },
